@@ -1,0 +1,84 @@
+.push{
+    background-color: #242422;
+    width: 100%;
+    height: auto;
+}
+.push--section{
+    width: 100%;
+}
+.img--section--p{
+    background: url(../../../public/media/push.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 91vh;
+}
+.push--tittle h3 {
+    font-size: 70px;
+    font-weight: 500;
+    color: #5C8B34;
+    margin-top: 40px;
+}
+h3 {
+    color: #5C8B34;
+}
+.push--p p{
+    color: #545454;
+    font-size: 30px;
+    line-height: 30px;
+}
+.cards{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+ .card{
+     background-color: transparent;
+     border: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .card h3 {
+     opacity: 0;
+     position: absolute;
+     z-index: 5;
+     padding: 9px;
+ }
+ .card:hover h3{
+     opacity: 1;
+     background-color: #242424;
+     border-radius: 15px;
+ }
+ .cards a img:hover{
+     filter: blur(3px);
+ }
+ .push--workouts .cards a img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 25px;
+   
+ }
+@media screen and (max-width:720px) {
+    .push--tittle h3{
+        font-size: 50px;
+    }
+    .push--p p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .img--section--p{
+        background: url(../../../public/media/push--mb.jpg);
+        height: 95vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+}

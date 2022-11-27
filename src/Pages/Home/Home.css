@@ -1,0 +1,206 @@
+.home {
+  background-color: #242424;
+  width: 100%;
+  min-height: 300vh;
+  background-image: url(../../../public/media/main.png);
+  background-repeat: no-repeat;
+  background-size: 100% 91vh;
+}
+.cont {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main--section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main--section .main--tittle {
+  color: #5c8b34;
+}
+.main--tittle h1 {
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 100px;
+}
+.underline img {
+  width: 450px;
+}
+.workout--section {
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.workout--section--info {
+  display: flex;
+  flex-direction: column;
+  /* align-content: flex-start; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+}
+.workout--section--tittle h1 {
+  color: #5c8b34;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 95px;
+  margin-bottom: 20px;
+}
+.workout--section--p p {
+  color: #545454;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 30px;
+}
+.workout--section--img .workout--overlay {
+  height: 500px;
+  width: 310px;
+  position: absolute;
+}
+.workout--overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(36, 36, 36, 0.6);
+}
+
+.workout--section--img img {
+  border-radius: 20px;
+}
+
+.nut--section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nut--section--info {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+}
+.nut--section--tittle h1 {
+  color: #5c8b34;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 95px;
+  margin-bottom: 20px;
+}
+.nut--section--p p {
+  color: #545454;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 30px;
+}
+.nut--section--img .nut--overlay {
+  height: 500px;
+  width: 310px;
+  position: absolute;
+}
+.nut--overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(36, 36, 36, 0.6);
+}
+.nut--section--img img {
+  border-radius: 20px;
+}
+span {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 970px) {
+  .home {
+    background-image: url(../../../public/media/mainmo1.jpg);
+    background-repeat: no-repeat;
+  }
+  .cont {
+    width: 90%;
+    margin: auto;
+  }
+  .main--tittle h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 55px;
+  }
+  .underline img {
+    width: 300px;
+  }
+  .workout--section {
+    min-height: 170vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .workout--section--info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .workout--section--info h1 {
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+  .workout--section--p p {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .workout--section--img img {
+    width: 300px;
+    height: 500px;
+    margin-top: 20px;
+  }
+  .nut--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 170vh;
+  }
+  .nut--section--info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nut--section--info h1 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+  .nut--section--p p {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .nut--section--img img {
+    width: 300px;
+    height: 520px;
+    margin-bottom: 10px;
+  }
+  .workout--section--img .workout--overlay {
+    height: 520px;
+    position: absolute;
+  }
+  .nut--section--img .nut--overlay {
+    height: 520px;
+    width: 300px;
+    position: absolute;
+  }
+}

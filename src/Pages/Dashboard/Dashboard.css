@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: #242424;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.user-card {
+  width: 80%;
+  min-height: 500px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 50px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+}
+
+.user-card img {
+  width: 300px;
+}
+
+.user-card .details {
+  height: 80%;
+  padding-top: 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 75px;
+}
+
+.user-card .details .personal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.user-card .details .other {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+}
+.user-card .details .personal h1,
+.user-card .details .other h1 {
+  color: gray;
+}
+.user-card .details .other .display-6 .green {
+  color: #7cbb4b;
+}
+.survey--btn{
+  width: 140px;
+  font-size: 24px;
+  height: 50px;
+}
+
+.macros {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.macros .cards {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.macros .cards .card {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  margin: 50px;
+}
+.macros .cards .card .status {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  color: #7cbb4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #7cbb4b;
+}
+
+.workout{
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 50px;
+  border-radius: 50px;
+}
+.meals{
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 50px;
+  border-radius: 50px;
+}
+
+.workout section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+}
+
+.workout section .cards,
+.meals .cards {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.workout section .cards a{
+  width: 350px;
+  height: 250px;
+  margin: 25px;
+}
+.card{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h3 {
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+  padding: 9px;
+}
+.card:hover h3{
+  display: flex;
+  opacity: 1;
+  background-color: #242424;
+  align-items: center;
+  justify-content: center;
+}
+.cards a img:hover{
+  filter: blur(3px);
+}
+
+.workout section .cards a img,
+.meals .cards a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.meals .cards a img{
+  width: 250px;
+  height: 400px;
+  margin: 30px;
+  border-radius: 15px;
+ 
+}
+
+@media screen and (max-width: 1750px) {
+  .user-card,
+  .workout,
+  .meals {
+    width: 100%;
+    border-radius: 18px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .user-card {
+    flex-direction: column;
+  }
+  .user-card .details .personal {
+    flex-direction: column;
+  }
+  .user-card .details .personal li,
+  .user-card .details .other li {
+    margin: 20px 0px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .user-card .details,
+  .user-card .details .personal,
+  .user-card .details .other {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 25px 0px;
+  }
+  .workout section .cards a{
+    width: 250px;
+    height: 150px;
+  }
+  .workout,
+  .workout section {
+    width: 100%;
+    padding: 0;
+  }
+  .meals{
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 50px;
+    border-radius: 50px;
+  }
+  .workout section h1,
+  .meals h1 {
+    text-align: center;
+  }
+  .user-card img {
+    width: 200px;
+    height: 200px;
+  }
+  .macros .cards .card .status {
+    width: 200px;
+    height: 200px;
+  }
+}

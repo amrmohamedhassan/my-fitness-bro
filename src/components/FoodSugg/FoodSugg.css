@@ -1,0 +1,72 @@
+.foodSugg{
+    margin-top: 20px;
+    width: 100%;
+    height: 130px;
+    background-color: #1D1D1D;
+    border: 0;
+    border-radius: 15px;
+    color: #505050;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+  }
+
+  .cal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #505050;
+    text-align: center;
+    margin-right: 10px;
+  }
+  .cal h1{
+      font-size: 30px;
+  }
+  
+  .food--name > h2{
+    font-size: 24px;
+    color: #505050;
+  }
+  .food--macros {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+  .food--macros > h4 {
+    font-size: 20px;
+  }
+
+@media screen and (max-width: 970px) {
+  .foodSugg{
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .foodSugg .name--macros .food--name h3{
+  font-size: 18px;
+  }
+  .foodSugg .name--macros .food--macros h4{
+  font-size: 14px;
+
+  }
+  .food--macros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .cal h1{
+    font-size: 18px;
+    margin-top: 10px;
+    
+}
+}

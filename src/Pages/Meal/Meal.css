@@ -1,0 +1,105 @@
+.Meal{
+    background-color: #242424;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.meal--details{
+    width: 80%;
+    height: auto;
+    background-color: #1d1d1d;
+    border-radius: 15px;
+    margin: 40px 0px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+.meal--img {
+    width: 30%;
+    height: 70%;
+}
+.meal--img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.meal--title{
+    margin-top: 30px;
+    color: #7CBB4B;
+}
+.meal--ing{
+    margin-top: 20px;
+    color: #7CBB4B;
+    list-style: none;
+}
+.ing--title h3{
+    color: #545454;
+    margin-bottom: 10px;
+}
+.ing--details h6{
+    color: #545454;
+    margin: 10px 0px;
+}
+.meal--ing li{
+    margin-top: 10px;
+    list-style: none;
+    font-weight: 700;
+}
+.macros{
+    color: #545454;
+    font-weight: 500;
+}
+.macros--grid ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.macros--grid li{
+    margin-right: 20%;
+}
+.inst--title h3{
+    margin-top: 30px;
+    color: #7CBB4B;
+}
+.meal--inst p {
+    color: #545454;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.meal--btn{
+    margin-top: 30px;
+}
+.totalMacros--title h3{
+    margin-top: 30px;
+    color: #7CBB4B;
+}
+.total--macros li{
+    margin-top: 10px;
+    list-style: none;
+    font-weight: 700;
+    margin-right: 20%;
+    padding-top: 0px;
+}
+
+.total--macros ul{
+    display: flex;
+    align-items: center;
+    padding: 0px;   
+}
+@media screen and (max-width: 800px) {
+    .meal--img {
+        width: 60%;
+    }
+    .meal--inst p {
+        font-weight: 500;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    .total--macros li{
+        font-weight: 600;
+        margin-right: 7%;
+    }
+}

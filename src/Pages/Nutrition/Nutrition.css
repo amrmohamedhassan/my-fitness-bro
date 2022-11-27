@@ -1,0 +1,62 @@
+.nutrition{
+    width: 100%;
+    height: auto;
+    background: #242424;
+  }
+  .food--sugg--tittle h3{
+      color: #5c8b34;
+      margin-top: 20px;
+      font-size: 25px;
+  }
+ .meals--section{
+     display: flex;
+     flex-direction: column;
+ }
+ .meals--section h3{
+    color: #5c8b34;
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+ }
+ .cards{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+ .card{
+     background-color: transparent;
+     border: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .card h3 {
+     opacity: 0;
+     position: absolute;
+     z-index: 5;
+     padding: 9px;
+ }
+ .card:hover h3{
+     opacity: 1;
+     background-color: #242424;
+     border-radius: 15px;
+ }
+ .cards a img:hover{
+     filter: blur(3px);
+ }
+ .meals--section .cards a img{
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 25px;
+   
+ }
+ @media screen and (max-width: 970px) {
+    .food--sugg--tittle h3{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,64 @@
+.workoutt {
+  background-color: #242424;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+}
+.cont .workout--var {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cont .workout--var a {
+  width: 400px;
+  height: 200px;
+  margin: 25px 25px;
+}
+.cont .workout--var a .workout--type1,
+.cont .workout--var a .workout--type2,
+.cont .workout--var a .workout--type3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 15px;
+}
+.workout--type1 {
+  background: url(../../../public/media/push.jpg);
+}
+.workout--type2 {
+  background: url(../../../public/media/split.jpg);
+}
+.workout--type3 {
+  background: url(../../../public/media/home.jpg);
+}
+.workout--name {
+  font-size: 36px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0px;
+  line-height: 30px;
+}
+@media screen and (max-width: 480px) {
+  .workoutt .cont {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .cont .workout--var {
+    width: 100%;
+    margin: 0px;
+  }
+  .cont .workout--var a {
+    margin: 25px 0px;
+  }
+}

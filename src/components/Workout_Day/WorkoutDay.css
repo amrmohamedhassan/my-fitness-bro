@@ -1,0 +1,44 @@
+.workout_day{
+    width: 100%;
+}
+.day--tittle h3 {
+    font-size: 70px;
+    font-weight: 500;
+    color: #5C8B34;
+    margin-top: 10px;
+}
+.workout--cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.workoutvr{
+    width: 20%;
+    height: 180px;
+    border-radius: 25PX;
+    background-color: #1D1D1D;
+    margin: 15px 20px 15px 0;
+}
+.workoutvr img{
+    background-size: 260px 180px;
+    border-radius: 25px;
+}
+@media  screen and (max-width:720px) {
+    .day--tittle {
+        display: flex;
+        justify-content: center;
+    }
+    .day--tittle h3{
+        font-size: 50px;
+    }
+    .workout--cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .workoutvr{
+        width: 100%;
+    }
+    
+}

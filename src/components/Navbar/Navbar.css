@@ -1,0 +1,116 @@
+nav{
+    width: 100%;
+    background-color: #242424;
+    padding: 10px;
+}
+.cont{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list li {
+    margin: 0px 30px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #7cbb4b;
+}
+.nav-list li:hover{
+    margin-bottom: 2px;
+    text-decoration: underline;
+}
+button{
+    background-color: #545454;
+    color: #7cbb4b;
+    height: 45px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #545454;
+    color: #242424;
+}
+.smallScreenMenu{
+    display: none;
+}
+.smallScreenOverlay {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #242424;
+    transition: .5s ease;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+.smallScreenOverlay .overlayClose {
+    font-size: 27px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+}
+.smallScreen-nav-list {
+    list-style: none;
+    padding: 0px;
+}
+
+.smallScreen-nav-list li {
+    margin: 40px;
+    cursor: pointer;
+    color: #7cbb4b;
+    font-size: 21px;
+    text-align: center;
+}
+.smallScreen-nav-list li:hover{
+    text-decoration: underline;
+}
+.smallScreen-btn{
+    background-color: #545454;
+    color: #7cbb4b;
+    width: auto;
+    height: 45px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 970px) {
+    nav{
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+    .nav-list{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .smallScreenMenu{
+        display: flex;
+    }
+    .smallScreenOverlay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}

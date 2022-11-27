@@ -1,0 +1,48 @@
+.sign--backGround {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(36, 36, 36);
+}
+.form--sign > a img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.form--sign {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 40%;
+  height: auto;
+  border-radius: 15px;
+  background-color: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sign--input {
+  width: 80%;
+  background: #545454;
+  border-radius: 10px;
+  height: 40px;
+  border: none;
+  border: 1px solid gray;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.sign--submit {
+  width: 30%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #7cbb4b;
+  background: #545454;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}

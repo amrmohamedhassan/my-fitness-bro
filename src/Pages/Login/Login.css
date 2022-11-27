@@ -1,0 +1,63 @@
+.form--backGround {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(36, 36, 36);
+  }
+  .form--login {
+    width: 500px;
+    height:auto;
+    padding: 50px;
+    background-color: #1D1D1D;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form--login >  a img{
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  .form--title{
+    color:#7CBB4B ;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .form--input{
+    width: 100%;
+    margin-bottom: 35px;
+    background: #545454;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+    border: 1px solid gray;
+    padding: 5px;
+  }
+  ::placeholder{
+    color: #242424;
+  }
+  .login--submit {
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #7CBB4B;
+    background: #545454;
+    border: none;   
+    cursor: pointer; 
+    text-align: center;
+  }
+  
+  .signup--account{
+    color: #7CBB4B;
+    font-size: 12px;
+  }
+
+  .signup--account:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
